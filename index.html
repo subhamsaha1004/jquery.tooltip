@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Tooltip Plugin</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Kelly+Slab|Oleo+Script+Swash+Caps:400,700|Amaranth:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="tooltip/jquery.tooltip.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="page">
+		<h1>jQuery Tooltip Plugin</h1>
+		<div id="content">
+			<h2 class="subtitle">Hover over the list items</h2>
+			<h3>First List</h3>
+			<ul class="list list1">
+				<li data-tooltip="This is the first item">Item1</li>
+				<li data-tooltip="This is the second item">Item2</li>
+				<li data-tooltip="This is the third item">Item3</li>
+				<li data-tooltip="This is the fourth item">Item4</li>
+				<li data-tooltip="This is the fifth item">Item5</li>
+			</ul>
+			<h3>Second List</h3>
+			<ul class="list list2">
+				<li data-tooltip="This is the first item in the second list">Item1</li>
+				<li data-tooltip="This is the second item in the second list">Item2</li>
+				<li data-tooltip="This is the third item in the second list">Item3</li>
+				<li data-tooltip="This is the fourth item in the second list">Item4</li>
+				<li data-tooltip="This is the fifth item in the second list">Item5</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="jquery.tooltip/tooltip.js"></script>
+	<script>
+		(function() {
+			// initialize the plugin
+			$('.list1').tooltip({
+				target: "li"
+			});
+
+			$('.list2').tooltip({
+				target: "li",
+				css: {
+					"background": "#ee1821",
+					"color": "#fff",
+					"position": "absolute",
+					"top": 0,
+					"left": "270px",
+					"padding": "15px",
+					"min-width": "300px",
+					"text-align": "center"
+				}
+			});
+
+		}());
+	</script>
+</body>
+</html>

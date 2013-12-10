@@ -1,0 +1,5 @@
+.arrow { position: absolute; width: 0; height: 0; border-style: solid; border-color: transparent; border-width: 7px;}
+.leftarrow { top:15px; right: -14px;  }
+.rightarrow { top: 15px; left: -14px; }
+.toparrow { left: 15px; top: -14px; }
+.bootomarrow { left: 15px; bottom: -14px; }
