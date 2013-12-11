@@ -22,18 +22,20 @@
 				<li data-tooltip="This is the fifth item">Item5</li>
 			</ul>
 			<h3>Second List</h3>
-			<ul class="list list2">
-				<li data-tooltip="This is the first item in the second list">Item1</li>
-				<li data-tooltip="This is the second item in the second list">Item2</li>
-				<li data-tooltip="This is the third item in the second list">Item3</li>
-				<li data-tooltip="This is the fourth item in the second list">Item4</li>
-				<li data-tooltip="This is the fifth item in the second list">Item5</li>
-			</ul>
+			<div class="listWrapper">
+				<ul class="list list2">
+					<li data-tooltip="This is the first item in the second list">Item1</li>
+					<li data-tooltip="This is the second item in the second list">Item2</li>
+					<li data-tooltip="This is the third item in the second list">Item3</li>
+					<li data-tooltip="This is the fourth item in the second list">Item4</li>
+					<li data-tooltip="This is the fifth item in the second list">Item5</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
 	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="jquery.tooltip/tooltip.js"></script>
+	<script src="tooltip/jquery.tooltip.js"></script>
 	<script>
 		(function() {
 			// initialize the plugin
@@ -48,11 +50,12 @@
 					"color": "#fff",
 					"position": "absolute",
 					"top": 0,
-					"left": "270px",
+					"left": "-370px",
 					"padding": "15px",
 					"min-width": "300px",
 					"text-align": "center"
-				}
+				},
+				position: "left"
 			});
 
 		}());
