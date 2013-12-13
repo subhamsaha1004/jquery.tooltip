@@ -26,6 +26,11 @@
 
 		// Append to the dom
 		$(target).append($html);
+		setTimeout(function() {
+			$html.css({
+				"opacity": 1
+			});
+		}, 25);
 	};
 
 	Tooltip.prototype.destroy = function() {
@@ -76,7 +81,9 @@
 			"left": "270px",
 			"padding": "15px",
 			"min-width": "300px",
-			"text-align": "center"
+			"text-align": "center",
+			"opacity": 0,
+			"-webkit-transition": "all 1s ease-out"
 		},
 		target: null
 	};
